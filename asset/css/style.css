@@ -1,0 +1,26 @@
+
+header .header-nav{
+    background-color: #333e48;
+    height: 34px;
+}
+header .header-nav .header-nav-fat{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+header .header-nav .header-nav-chil{
+    display: flex;
+    align-items: center;
+}
+header .header-nav .header-nav-click{
+}
+header .header-nav .header-nav-click a{
+    color: white;
+    text-decoration: none;
+}
+header .header-nav .header-nav-click i{
+}
+header .header-nav .header-nav-click span{
+    color: white;
+    font-size: 14px;
+}
