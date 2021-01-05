@@ -1,5 +1,5 @@
 :root{
-    
+    --text-color:#333;
 }
 header{
 }
@@ -7,6 +7,24 @@ header{
     width: 1200px;
     margin: 0 auto ;
     height: 100%;
+}
+.grid-full-width{
+    width: 100%;
+}
+.grid-row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0px 20px 0px;
+    margin: 0px -12px;
+}
+/* column */
+.grid-column-2{
+    width: 16.6667%;
+    padding: 0px 12px;
+}
+.grid-column-10{
+    width: 83.3333%;
+    padding: 0px 12px;
 }
 @keyframes fadeIn{
     from{

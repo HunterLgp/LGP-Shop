@@ -70,6 +70,7 @@ header .header-nav-qr-main{
     display: none;
     width: 188px;
     height: 222px;
+    z-index: 4;
     background-color: white;
     top: 100%;
     animation: fadeIn 0.5s ease-out;
@@ -206,6 +207,7 @@ header .header-main .header-main-logo img{
 header .header-main-box{
     display: flex;
     height: 100%;
+    padding: 7px 0px;
 }
 header .header-main .header-main-select{
     flex: 1;
@@ -336,6 +338,23 @@ header .header-main .header-main-cart{
     width: 100px;
     display: flex;
 }
+header .header-main  .header-main-cart-number{
+    position: absolute;
+    height: 20px;
+    width: 25px;
+    top: -11px;
+    right: 0px;
+    border-radius: 24px;
+    background-color: white;
+    border: solid 2px #fb5433;
+    display: flex;
+}
+header .header-main  .header-main-cart-number span{
+    font-size: 14px;
+    margin: auto;
+    color: #fb5433 ;
+    line-height : 14px;
+}
 header .header-main .header-main-cart .header-main-cart-hover{
     margin: auto;
     width: 50px;
@@ -355,6 +374,7 @@ header .header-main .header-main-cart .header-main-cart-mini{
     position: absolute;
     padding: 10px;
     display: none;
+    background-color: white;
     top: 34px;
     right: 0;
     width: 400px;
@@ -420,6 +440,9 @@ header .header-main .header-main-cart .header-main-cart-mini .list-catagory li{
     display: flex;
     height: 60px;
     align-items: center;
+}
+header .header-main .header-main-cart .header-main-cart-mini .list-catagory li:hover{
+   background-color: #f5f5f5;
 }
 header .header-main .header-main-cart .header-main-cart-mini .list-catagory li img{
     width: 40px;
@@ -506,4 +529,164 @@ header .header-main-cart--has-cart .list-catagory-but{
 main{
     background-color: #f5f5f5;
 }
+/* List-Name */
+main .list-name{
+    background-color: white;
+}
+main .list-name .list-name-header{
+    position: relative;;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+main .list-name .list-name-header i{
+    padding-right: 10px;
+}
+main .list-name .list-name-header span{}
+main .list-name .list-name-header::after{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 1px;
+    top: 100%;
+    background-color: #ababab36;
+    right: 0;
+}
+main .list-name .list-name-action{
+    padding: 10px;
+    position: relative;
+}
+main .list-name .list-name-action::before{
+    content: "";
+    border-width: 5px;
+    position: absolute;
+    border-style: solid;
+    border-color: transparent transparent transparent #d50137;
+    top: 17px;
+    left: -1px;
+}
+main .list-name .list-name-action > span{
+    color: #d50137;
+    font-size: 15px;
+}
+main .list-name .list-name-catagory{
+    list-style: none;
+    padding: 0px 10px;
+}
+main .list-name .list-name-catagory li{
+    padding: 3px 0px;
+}
+main .list-name  .list-name-catagory li a{
+    color: #333;
+    text-decoration: none;
+}
+main .list-name .list-name-catagory li a span{
+    font-size: 14px;
+}
+/* End-List-Name */
+/* Filter*/
+main .home-filter{
+    width: 100%;
+    height: 60px;
+    background-color: #ededed;
+    display: flex;
+    justify-content: space-between;
+}
+main .home-filter .home-filter-click{
+    display: flex;
+    padding: 0px 0px 0px 20px;
+    height: 100%;
+    justify-content: space-between;
+    flex: 1;
+    align-items: center;
+}
+main .home-filter .home-filter-click span{
+
+font-size: 14px;
+}
+main .home-filter .home-filter-click button:nth-child(2){
+    background-color: #ee4d2d;
+    color: white;
+}
+main .home-filter .home-filter-click button{
+    width: 90px;
+    height: 36px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border-radius: 3px;
+    background-color: white;
+}
+main .home-filter .home-filter-click .home-filter-select{
+    width: 200px;
+    height: 36px;
+    position: relative;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .home-filter .home-filter-click .home-filter-select span{
+    padding: 15px;
+}
+main .home-filter .home-filter-click .home-filter-select i{
+    padding: 15px;
+}
+main .home-filter .home-filter-click .home-filter-select .home-filter-option{
+    position: absolute;
+    display: none;
+    list-style: none;
+    padding: 0;
+    top: calc(100% + 2px);
+    width: 200px;
+    height: 80px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px 1px #c1c1c166;
+}
+main .home-filter .home-filter-click .home-filter-select:hover .home-filter-option{
+    display: block;
+}
+main .home-filter .home-filter-click .home-filter-select .home-filter-option li{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+main .home-filter .home-filter-click .home-filter-select .home-filter-option li:hover a{
+    color: #ee4d2d;
+}
+main .home-filter .home-filter-click .home-filter-select .home-filter-option li a{
+    padding-left: 10px;
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+}
+main .home-filter .home-filter-pagination{
+    width: 370px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+main .home-filter .home-filter-pagination span{
+    padding: 2px;
+}
+main .home-filter .home-filter-pagination .home-filter-pagination-btn {
+    padding: 2px 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+main .home-filter .home-filter-pagination .home-filter-pagination-btn button{
+    background-color: white;
+    border: none;
+    height: 36px;
+    width: 36px;
+    border-radius: 3px;
+    margin: 0px 0px 0px 1px;
+}
+main .home-filter .home-filter-pagination span:first-child{
+    color: #ee4d2d;
+}
+main .home-filter .home-filter-pagination .home-filter-pagination-btn button i{}
+/* End-Filter*/
+
 /* End-Main */
