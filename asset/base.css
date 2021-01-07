@@ -1,7 +1,10 @@
 :root{
     --text-color:#333;
 }
-header{
+main{
+    background-color: #f5f5f5;
+    padding: 40px 0px;
+    border-bottom: 4px solid #ee4d2d;
 }
 .grid{
     width: 1200px;
@@ -14,10 +17,18 @@ header{
 .grid-row{
     display: flex;
     flex-wrap: wrap;
-    padding: 40px 0px 20px 0px;
     margin: 0px -12px;
 }
+.grid-row-mini{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -5px;
+}
 /* column */
+.grid-column-3{
+    width: 25%;
+    padding: 0px 5px;
+}
 .grid-column-2{
     width: 16.6667%;
     padding: 0px 12px;
