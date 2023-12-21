@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gradientStart: "#4190E5",
+              gradientEnd: "#3636BF",
+              black: "#000000",
+              bgFooter: "#222222",
+              textBlack: "#1A1A1A",
+              textBlack: "#1A1A1A",
+              textGray: "#667085",
+            },
+            screens: {
+              ssm: "414px",
+              sm: "640px",
+              md: "768px",
+              lg: "1024px",
+              xl: "1280px",
+              "2xl": "1440px",
+              "3xl": "1536px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <footer class="w-full h-[430px] bg-bgFooter">
+      <div
+        class="mx-auto max-w-[1440px] px-[80px] flex justify-between h-full w-full"
+      >
+        <div class="w-full flex justify-between"></div>
+      </div>
+    </footer>
+  </body>
+</html>
