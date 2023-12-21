@@ -1,0 +1,147 @@
+.body {
+  position: relative;
+}
+
+.body .bg-img {
+  position: absolute;
+  right: 0;
+  top: 13.6rem;
+  width: 100%;
+  max-width: 83.9rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* scales section */
+
+.scales {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 9.5rem 2.8rem 11rem 2.8rem;
+}
+
+.scales h3 {
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 300;
+  width: 100%;
+  line-height: 140.625%;
+}
+
+.scales h3 span {
+  font-size: 2.6rem;
+  background: linear-gradient(97deg, #4190E5 10.95%, #3636BF 101.94%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.scales h4 {
+  margin-top: 1.88rem;
+  color: var(----primary-color-black-1, #222);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%;
+  text-align: right;
+  width: 100%;
+  /* 12px */
+}
+
+.scales h4 span {
+  background: linear-gradient(97deg, #4190E5 10.95%, #3636BF 101.94%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.scales .scales-logo {
+  margin-top: 4rem;
+  max-width: 32rem;
+  align-self: self-end;
+}
+
+@media (min-width: 475px) {
+  .scales {
+    padding: 14rem 2.8rem 11rem 2.8rem;
+  }
+  .scales h3 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .scales h3 span {
+    font-size: 3.6rem;
+  }
+  .scales h4 {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .scales h4 span {
+    font-size: 1.4rem;
+  }
+
+  .scales .scales-logo {
+    margin-top: 5rem;
+    max-width: 40rem;
+    align-self: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .scales {
+    padding: 15rem 2.8rem 11rem 2.8rem;
+  }
+  .scales h3 {
+    text-align: center;
+    font-size: 3.2rem;
+  }
+  .scales h3 span {
+    font-size: 3.8rem;
+  }
+  .scales h4 {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  .scales h4 span {
+    font-size: 1.6rem;
+  }
+
+  .scales .scales-logo {
+    margin-top: 6rem;
+    max-width: 50rem;
+    align-self: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .scales {
+    padding: 28rem 2.8rem 11rem 2.8rem;
+  }
+  .scales h3 {
+    text-align: center;
+    font-size: 3.6rem;
+  }
+  .scales h3 span {
+    font-size: 4.8rem;
+  }
+  .scales h4 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 3.3rem;
+  }
+  .scales h4 span {
+    font-size: 1.8rem;
+  }
+
+  .scales .scales-logo {
+    margin-top: 8rem;
+    max-width: 94rem;
+    align-self: center;
+  }
+}
