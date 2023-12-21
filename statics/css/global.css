@@ -1,0 +1,226 @@
+:root {
+  --primary-color-white-1: #fff;
+  --primary-color-black-1: #222;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  /* background: #f1f1f1; */
+}
+
+::-webkit-scrollbar-thumb {
+  /* background: #000066; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP';
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* navbar  */
+.navbar {
+  position: fixed;
+  padding: 1.6rem 2.4rem 1.6rem 2.4rem;
+  background: linear-gradient(180deg, rgba(15, 18, 17, 0.60) 0%, rgba(0, 0, 0, 0.00) 100%);
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar .app-logo img {
+  width: 17.2%;
+  min-width: 20rem;
+}
+
+#nav-icon>label {
+  cursor: pointer;
+  display: block;
+  height: 5.4rem;
+  width: 5.4rem;
+  position: relative;
+}
+
+#nav-icon>label>div {
+  top: 50%;
+  background: #ffff;
+  content: '';
+  display: block;
+  height: 1px;
+  position: absolute;
+  transition: transform ease .3s;
+  width: 5rem;
+}
+
+.icon .menu::before,
+.icon .menu::after {
+  background: #ffff;
+  content: '';
+  display: block;
+  height: 1px;
+  position: absolute;
+  transition: transform ease .3s;
+  width: 5rem;
+}
+
+.icon .menu::before {
+  top: -6px;
+}
+
+.icon .menu::after {
+  top: 6px;
+}
+
+
+#menu:checked+.icon .menu {
+  background: transparent;
+}
+
+#menu:checked+.icon .menu::before {
+  transform: rotate(20deg);
+}
+
+#menu:checked+.icon .menu::after {
+  transform: rotate(-20deg);
+}
+
+#menu:checked+.icon .menu::before,
+#menu:checked+.icon .menu::after {
+  top: 0;
+  transition: top ease .3s, transform ease .3s .3s;
+}
+
+/* #menu:checked ~ ul {
+  height: func.getRem();
+  visibility: visible;
+  opacity: 1;
+} */
+input#menu {
+  display: none;
+}
+
+/* header  */
+.header {
+  background-image: url('/statics/images//banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding-top: clamp(682px, 62.5%, 1000px);
+  background-position: center;
+  position: relative;
+}
+
+.header-container {
+  position: absolute;
+  padding-top: 21rem;
+  padding-bottom: 21rem;
+  padding-right: 3.2rem;
+  padding-left: 3.2rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.header-container h2 {
+  color: var(--primary-color-white-1, #fff);
+  font-size: 1.4rem;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  line-height: 130%;
+  text-transform: capitalize;
+  max-width: 19rem;
+}
+
+.header h1 {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  opacity: 0.9;
+  background: linear-gradient(97deg, #DFEEFF 10.95%, #5C5CFA 101.94%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+  font-size: 3.8155rem;
+  font-family: 'Roboto';
+  font-weight: 400;
+  z-index: 2;
+}
+
+.header .right-bottom-bar {
+  width: 36.11%;
+  min-width: 17.8rem;
+  padding-top: clamp(6.2rem, 19.23%, 10rem);
+  height: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(50%);
+  z-index: 1;
+  border-radius: 0px 50px 50px 0px;
+  background: linear-gradient(97deg, #4190E5 10.95%, #3636BF 101.94%)
+}
+
+@media (min-width: 425px) {
+  .header-container h2 {
+    font-size: 1.8rem;
+    max-width: 30.3rem;
+  }
+  .header h1 {
+    max-width: 50.4rem;
+    font-size: 3.2rem;
+    line-height: 4.2rem; 
+  }
+}
+
+@media (min-width: 768px) {
+  .header-container {
+    padding-right: 13rem;
+    padding-left: 13rem;
+    display: block;
+    align-items: unset;
+  }
+
+  .header-container h2 {
+    font-size: 2rem;
+    max-width: 40.3rem;
+  }
+  .header h1 {
+    max-width: 70.4rem;
+    font-size: 4.7rem;
+    line-height: 5.2rem; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .header h1 {
+    max-width: 80.4rem;
+    font-size: 6.7rem;
+    line-height: 7.2rem; 
+  }
+}
+
+@media (min-width: 1440px) {
+  .header h1 {
+    max-width: 111.4rem;
+    font-size: 8.7rem;
+    line-height: 9.3rem; 
+  }
+}
