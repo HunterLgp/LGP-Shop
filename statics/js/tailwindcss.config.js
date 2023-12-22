@@ -11,10 +11,13 @@ tailwind.config = {
         textTime: "#999999",
         bgTag: "#F3F4FC",
         border: "#EAECF0",
+        text1: '#222'
       },
     },
     screens: {
       ssm: "414px",
+      xsm: "475px",
+      xxsm: "525px",
       sm: "640px",
       md: "768px",
       lg: "1024px",

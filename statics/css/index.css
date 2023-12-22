@@ -66,6 +66,23 @@
   max-width: 32rem;
   align-self: self-end;
 }
+.view-more-button {
+  position: relative;
+}
+.view-more-button .arrow {
+  position: absolute;
+  top: 28px;
+  left: 30px;
+}
+.view-more-button svg {
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.view-more-button:hover svg {
+  color: rgb(166, 255, 0);
+}
+
 
 @media (min-width: 475px) {
   .scales {

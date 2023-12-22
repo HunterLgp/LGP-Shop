@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
   <link rel="stylesheet" href="/statics/css/global.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./statics//js/tailwindcss.config.js"></script>
 </head>
 
 <body>
   <nav class="navbar">
-    <div class="app-logo">
+    <div class="app-logo w-full">
       <a href="/index.html">
         <img src="/statics/images/app-logo.svg" />
       </a>
@@ -20,6 +22,47 @@
       <label for="menu" class="icon">
         <div class="menu"></div>
       </label>
+      <ul class="flex flex-col gap-[2rem] " id="menu">
+        <li>
+          <a href="/index.html">
+            <span class="text-[#fff] text-[2.4rem] font-montserrat">HOME</span>
+          </a>
+        </li>
+        <li>
+          <a href="/about.html">
+            <span class="text-[#fff] text-[2.4rem] font-montserrat">ABOUT</span>
+          </a>
+        </li>
+        <li>
+          <a href="/index.html">
+            <span class="text-[#fff] text-[2.4rem] font-montserrat">SERVICE</span>
+          </a>
+        </li>
+        <li>
+          <a href="/index.html">
+            <span class="text-[#fff] text-[2.4rem] font-montserrat">NEWS</span>
+          </a>
+        </li>
+        <li>
+          <a href="/index.html">
+            <span class="text-[#fff] text-[2.4rem] font-montserrat">CONTACT</span>
+          </a>
+        </li>
+        <li class="mt-[4rem]">
+          <a href="/index.html">
+            <span class="text-[#fff] text-[1.6rem] font-montserrat"> PRIVACY POLICY</span>
+          </a>
+        </li>
+        <li class="mt-[12.4rem]">
+          <div class="flex gap-[2.4rem] items-center justify-end px-[3rem]">
+            <span class="font-montserrat text-[1.4rem] text-[#fff]">
+              SHARE US
+            </span>
+            <a href="#"><img src="/statics/images/icons/twitter-ic.svg" alt="twitter"></a>
+            <a href="#"><img src="/statics/images/icons/facebook-ic.svg" alt="facebook"></a>
+          </div>
+        </li>
+      </ul>
     </div>
   </nav>
 </body>

@@ -18,7 +18,7 @@
 
 <body>
   <nav class="navbar">
-    <div class="app-logo">
+    <div class="app-logo w-full">
       <a href="/index.html">
         <img src="/statics/images/app-logo.svg" />
       </a>
@@ -28,10 +28,54 @@
       <label for="menu" class="icon">
         <div class="menu"></div>
       </label>
+      <ul class="flex flex-col gap-[2rem] " id="menu">
+        <li>
+          <a href="/index.html">
+            <span class="text-[#fff] text-[2.4rem] font-montserrat">HOME</span>
+          </a>
+        </li>
+        <li>
+          <a href="/about.html">
+            <span class="text-[#fff] text-[2.4rem] font-montserrat">ABOUT</span>
+          </a>
+        </li>
+        <li>
+          <a href="/index.html">
+            <span class="text-[#fff] text-[2.4rem] font-montserrat">SERVICE</span>
+          </a>
+        </li>
+        <li>
+          <a href="/index.html">
+            <span class="text-[#fff] text-[2.4rem] font-montserrat">NEWS</span>
+          </a>
+        </li>
+        <li>
+          <a href="/index.html">
+            <span class="text-[#fff] text-[2.4rem] font-montserrat">CONTACT</span>
+          </a>
+        </li>
+        <li class="mt-[4rem]">
+          <a href="/index.html">
+            <span class="text-[#fff] text-[1.6rem] font-montserrat"> PRIVACY POLICY</span>
+          </a>
+        </li>
+        <li class="mt-[12.4rem]">
+          <div class="flex gap-[2.4rem] items-center justify-end px-[3rem]">
+            <span class="font-montserrat text-[1.4rem] text-[#fff]">
+              SHARE US
+            </span>
+            <a href="#"><img src="/statics/images/icons/twitter-ic.svg" alt="twitter"></a>
+            <a href="#"><img src="/statics/images/icons/facebook-ic.svg" alt="facebook"></a>
+          </div>
+        </li>
+      </ul>
     </div>
   </nav>
   <header>
     <div class="header">
+      <video autoplay muted loop id="video">
+        <source src="./statics/video/home-video.webm" type="video/webm">
+      </video>
       <div class="header-container">
         <h2>
           Bridging Customers and Businesses,
@@ -57,7 +101,638 @@
       <h4>
         Empowering Your Business Through <span>“SCALES”</span>
       </h4>
-      <img class="scales-logo" src="/statics/images/icons/scales-1.svg" />
+      <picture>
+        <source media="(max-width:475px)" srcset="statics/images/icons/scales-1.svg">
+        <img class="scales-logo" src="statics/images/icons/scales-2.svg" alt="scale" style="width:100%;">
+      </picture>
+    </section>
+    <section>
+      <div class="strategy flex flex-col xsm:flex-row">
+        <div class="relative w-full">
+          <img class="top-[0] left-[1.2rem] xsm:left-[1.8rem] xl:left-[8rem] absolute w-[59%] xsm:w-[47%]"
+            src="/statics/images/icons/s-logo.svg" />
+          <div
+            class="flex items-center justify-start w-full px-[1.2rem] xsm:justify-center xsm:px-[1.8rem] xsm:h-full xsm:flex-col xsm:justify-between xsm:items-center xl:pl-[8rem] xl:pr-[2rem]">
+            <div
+              class="w-full flex justify-end px-[3rem] justify-between hidden xsm:flex xsm:px-[0] border-solid border-t-[1px] border-[#CCC] pt-[1.5rem]">
+              <h3
+                class="tracking-[3.6px] hidden xsm:block font-montserrat text-[1.8rem] bg-clip-text text-transparent bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94%">
+                Strategy
+              </h3>
+              <span class="text-[1.8rem] font-montserrat text-[#222]">01</span>
+            </div>
+            <div
+              class="border-solid border-[#CCC] border-t-[1px] pt-[1.5rem] w-[100%] max-w-[42rem]  xsm:border-none xsm:flex xsm:justify-center xsm:flex-col">
+              <div class="w-full flex justify-end xsm:hidden">
+                <span class="text-[1.8rem] font-montserrat text-[#222]">01</span>
+              </div>
+              <h3
+                class="tracking-[3.6px] mt-[3.6rem] xsm:hidden font-montserrat text-[1.8rem] bg-clip-text text-transparent bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94%">
+                Strategy
+              </h3>
+              <h3
+                class="text-[3.2rem] bg-clip-text text-transparent bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94%">
+                戦略
+              </h3>
+              <div class="mt-[3.2rem] mb-[5.5rem] xsm:mt-[2.4rem]">
+                <span class="text-[1.4rem]">
+                  マーケティング戦略の設計から実行、評価までを一元的に管理します。市場調査、競合分析、目標設定を含む全プロセスを網羅し、戦略的な意思決定をサポートします。これにより、ビジネスの成長と持続可能性を確保し、ROI（投資対効果）を最大化します。
+                </span>
+              </div>
+            </div>
+            <div class="hidden xsm:block"></div>
+          </div>
+        </div>
+        <div class="px-[1.2rem] w-[100%] max-w-[74.7rem] xsm:px-[0] mb-[7rem] xsm:mb-[0] z-[9]">
+          <picture>
+            <source media="(max-width:685px)" srcset="statics/images/strategy-1.png">
+            <img src="statics/images/strategy-2.png" alt="Flowers" style="width:100%;">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="crm flex flex-col xsm:flex-row">
+        <div class="relative w-full">
+          <img class="top-[6rem] right-[0] xsm:top-[0] xsm:left-[1.8rem] xl:left-[8rem] absolute w-[59%] xsm:w-[47%]"
+            src="/statics/images/icons/c-logo.svg" />
+          <div
+            class="flex items-center justify-start w-full px-[1.2rem] xsm:justify-center xsm:px-[1.8rem] xsm:h-full xsm:flex-col xsm:justify-between xsm:items-center xl:pl-[8rem] xl:pr-[2rem]">
+            <div
+              class="w-full flex justify-end px-[3rem] justify-between hidden xsm:flex xsm:px-[0] border-solid border-t-[1px] border-[#CCC] pt-[1.5rem]">
+              <h3
+                class="tracking-[3.6px] hidden xsm:block font-montserrat text-[1.8rem] bg-clip-text text-transparent bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94%">
+                CRM
+              </h3>
+              <span class="text-[1.8rem] font-montserrat text-[#222]">02</span>
+            </div>
+            <div
+              class="border-solid border-[#CCC] border-t-[1px] pt-[3.6rem] w-[100%] max-w-[42rem] xsm:border-none xsm:flex xsm:justify-center xsm:flex-col">
+              <div class="w-full flex justify-start xsm:hidden">
+                <span class="text-[1.8rem] font-montserrat text-[#222]">02</span>
+              </div>
+              <h3
+                class="tracking-[3.6px] text-right mt-[3.6rem] xsm:hidden font-montserrat text-[1.8rem] bg-clip-text text-transparent bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94%">
+                CRM
+              </h3>
+              <h3
+                class="text-right xsm:text-left text-[3.2rem] bg-clip-text text-transparent bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94%">
+                顧客関係管理
+              </h3>
+              <div class="mt-[3.2rem] mb-[5.5rem] xsm:mt-[2.4rem]">
+                <span class="text-[1.4rem]">
+                  顧客データの管理と分析を通じて、顧客との関係を強化します。リピートビジネスや顧客ロイヤルティを高めるための戦略を練り、実行します。これにより、長期的なビジネス成功が可能となり、顧客生涯価値（CLV）も向上します。
+                </span>
+              </div>
+            </div>
+            <div class="hidden xsm:block"></div>
+          </div>
+        </div>
+        <div class="px-[1.2rem] w-[100%] max-w-[74.7rem] xsm:px-[0] mb-[7rem] xsm:mb-[0] z-[9]">
+          <picture>
+            <source media="(max-width:685px)" srcset="statics/images/crm-1.png">
+            <img src="statics/images/crm-2.png" alt="Flowers" style="width:100%;">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="analytics flex flex-col xsm:flex-row">
+        <div class="relative w-full">
+          <img class="top-[0] left-[1.2rem] xsm:left-[1.8rem] xl:left-[8rem] absolute w-[59%] xsm:w-[47%]"
+            src="/statics/images/icons/a-logo.svg" />
+          <div
+            class="flex items-center justify-start w-full px-[1.2rem] xsm:justify-center xsm:px-[1.8rem] xsm:h-full xsm:flex-col xsm:justify-between xsm:items-center xl:pl-[8rem] xl:pr-[2rem]">
+            <div
+              class="w-full flex justify-end px-[3rem] justify-between hidden xsm:flex xsm:px-[0] border-solid border-t-[1px] border-[#CCC] pt-[1.5rem]">
+              <h3
+                class="tracking-[3.6px] hidden xsm:block font-montserrat text-[1.8rem] bg-clip-text text-transparent bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94%">
+                Analytics
+              </h3>
+              <span class="text-[1.8rem] font-montserrat text-[#222]">03</span>
+            </div>
+            <div
+              class="border-solid border-[#CCC] border-t-[1px] pt-[1.5rem] w-[100%] max-w-[42rem]  xsm:border-none xsm:flex xsm:justify-center xsm:flex-col">
+              <div class="w-full flex justify-end xsm:hidden">
+                <span class="text-[1.8rem] font-montserrat text-[#222]">03</span>
+              </div>
+              <h3
+                class="tracking-[3.6px] mt-[3.6rem] xsm:hidden font-montserrat text-[1.8rem] bg-clip-text text-transparent bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94%">
+                Analytics
+              </h3>
+              <h3
+                class="text-[3.2rem] bg-clip-text text-transparent bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94%">
+                分析
+              </h3>
+              <div class="mt-[3.2rem] mb-[5.5rem] xsm:mt-[2.4rem]">
+                <span class="text-[1.4rem]">
+                  データ分析を用いて、マーケティング活動の効果を測定し、戦略を最適化します。KPI（重要業績評価指標）に基づいてパフォーマンスを評価し、改善点を明確にします。データドリブンなアプローチにより、より効果的なマーケティング戦略を展開します。
+                </span>
+              </div>
+            </div>
+            <div class="hidden xsm:block"></div>
+          </div>
+        </div>
+        <div class="px-[1.2rem] w-[100%] max-w-[74.7rem] xsm:px-[0] mb-[7rem] xsm:mb-[0]">
+          <picture>
+            <source media="(max-width:685px)" srcset="statics/images/analytics-1.png">
+            <img src="statics/images/analytics-2.png" alt="Flowers" style="width:100%;">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="localization flex flex-col xsm:flex-row">
+        <div class="relative w-full">
+          <img class="top-[0rem] right-[0] xsm:top-[0] xsm:left-[1.8rem] xl:left-[8rem] absolute w-[59%] xsm:w-[47%]"
+            src="/statics/images/icons/l-logo.svg" />
+          <div
+            class="flex items-center justify-start w-full px-[1.2rem] xsm:justify-center xsm:px-[1.8rem] xsm:h-full xsm:flex-col xsm:justify-between xsm:items-center xl:pl-[8rem] xl:pr-[2rem]">
+            <div
+              class="w-full flex justify-end px-[3rem] justify-between hidden xsm:flex xsm:px-[0] border-solid border-t-[1px] border-[#CCC] pt-[1.5rem]">
+              <h3
+                class="tracking-[3.6px] hidden xsm:block font-montserrat text-[1.8rem] bg-clip-text text-transparent bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94%">
+                Localization
+              </h3>
+              <span class="text-[1.8rem] font-montserrat text-[#222]">04</span>
+            </div>
+            <div
+              class="border-solid border-[#CCC] border-t-[1px] pt-[3.6rem] w-[100%] max-w-[42rem] xsm:border-none xsm:flex xsm:justify-center xsm:flex-col">
+              <div class="w-full flex justify-start xsm:hidden">
+                <span class="text-[1.8rem] font-montserrat text-[#222]">04</span>
+              </div>
+              <h3
+                class="tracking-[3.6px] text-right mt-[3.6rem] xsm:hidden font-montserrat text-[1.8rem] bg-clip-text text-transparent bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94%">
+                Localization
+              </h3>
+              <h3
+                class="text-right xsm:text-left text-[3.2rem] bg-clip-text text-transparent bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94%">
+                地域・文化適応
+              </h3>
+              <div class="mt-[3.2rem] mb-[5.5rem] xsm:mt-[2.4rem]">
+                <span class="text-[1.4rem]">
+                  地域や文化に合わせてマーケティング戦略をカスタマイズし、ターゲット市場での成功を促進します。地域特有のニーズや文化的な要素を考慮に入れ、効果的なマーケティング活動を展開します。これにより、地域市場でのブランド認知度と信頼性が向上します。
+                </span>
+              </div>
+            </div>
+            <div class="hidden xsm:block"></div>
+          </div>
+        </div>
+        <div class="px-[1.2rem] w-[100%] max-w-[74.7rem] xsm:px-[0] mb-[7rem] xsm:mb-[0] z-[9]">
+          <picture>
+            <source media="(max-width:685px)" srcset="statics/images/localization-1.png">
+            <img src="statics/images/localization-2.png" alt="Flowers" style="width:100%;">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="strategy flex flex-col xsm:flex-row">
+        <div class="relative w-full">
+          <img class="top-[0] left-[1.2rem] xsm:left-[1.8rem] xl:left-[8rem] absolute w-[59%] xsm:w-[47%]"
+            src="/statics/images/icons/e-logo.svg" />
+          <div
+            class="flex items-center justify-start w-full px-[1.2rem] xsm:justify-center xsm:px-[1.8rem] xsm:h-full xsm:flex-col xsm:justify-between xsm:items-center xl:pl-[8rem] xl:pr-[2rem]">
+            <div
+              class="w-full flex justify-end px-[3rem] justify-between hidden xsm:flex xsm:px-[0] border-solid border-t-[1px] border-[#CCC] pt-[1.5rem]">
+              <h3
+                class="tracking-[3.6px] hidden xsm:block font-montserrat text-[1.8rem] bg-clip-text text-transparent bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94%">
+                Engagement
+              </h3>
+              <span class="text-[1.8rem] font-montserrat text-[#222]">05</span>
+            </div>
+            <div
+              class="border-solid border-[#CCC] border-t-[1px] pt-[1.5rem] w-[100%] max-w-[42rem]  xsm:border-none xsm:flex xsm:justify-center xsm:flex-col">
+              <div class="w-full flex justify-end xsm:hidden">
+                <span class="text-[1.8rem] font-montserrat text-[#222]">05</span>
+              </div>
+              <h3
+                class="tracking-[3.6px] mt-[3.6rem] xsm:hidden font-montserrat text-[1.8rem] bg-clip-text text-transparent bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94%">
+                Engagement
+              </h3>
+              <h3
+                class="text-[3.2rem] bg-clip-text text-transparent bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94%">
+                ユーザー関与
+              </h3>
+              <div class="mt-[3.2rem] mb-[5.5rem] xsm:mt-[2.4rem]">
+                <span class="text-[1.4rem]">
+                  ソーシャルメディア、コンテンツマーケティング、イベントなどを通じて、顧客エンゲージメントを高めます。これにより、顧客との強固な関係を築き、ブランドの認知度と信頼性を向上させます。高いエンゲージメントは、顧客からの口コミや推薦も促進し、新規顧客獲得にも寄与します。
+                </span>
+              </div>
+            </div>
+            <div class="hidden xsm:block"></div>
+          </div>
+        </div>
+        <div class="px-[1.2rem] w-[100%] max-w-[74.7rem] xsm:px-[0] mb-[7rem] xsm:mb-[0] z-[9]">
+          <picture>
+            <source media="(max-width:685px)" srcset="statics/images/engagement-1.png">
+            <img src="statics/images/engagement-2.png" alt="Flowers" style="width:100%;">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="localization flex flex-col xsm:flex-row">
+        <div class="relative w-full">
+          <img class="right-[0] xsm:top-[0] xsm:left-[1.8rem] xl:left-[8rem] absolute w-[59%] xsm:w-[47%]"
+            src="/statics/images/icons/s-logo.svg" />
+          <div
+            class="flex items-center justify-start w-full px-[1.2rem] xsm:justify-center xsm:px-[1.8rem] xsm:h-full xsm:flex-col xsm:justify-between xsm:items-center xl:pl-[8rem] xl:pr-[2rem]">
+            <div
+              class="w-full flex justify-end px-[3rem] justify-between hidden xsm:flex xsm:px-[0] border-solid border-t-[1px] border-[#CCC] pt-[1.5rem]">
+              <h3
+                class="tracking-[3.6px] hidden xsm:block font-montserrat text-[1.8rem] bg-clip-text text-transparent bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94%">
+                Social Media
+              </h3>
+              <span class="text-[1.8rem] font-montserrat text-[#222]">06</span>
+            </div>
+            <div
+              class="border-solid border-[#CCC] border-t-[1px] pt-[3.6rem] w-[100%] max-w-[42rem] xsm:border-none xsm:flex xsm:justify-center xsm:flex-col">
+              <div class="w-full flex justify-start xsm:hidden">
+                <span class="text-[1.8rem] font-montserrat text-[#222]">06</span>
+              </div>
+              <h3
+                class="tracking-[3.6px] text-right mt-[3.6rem] xsm:hidden font-montserrat text-[1.8rem] bg-clip-text text-transparent bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94%">
+                Social Media
+              </h3>
+              <h3
+                class="text-right xsm:text-left text-[3.2rem] bg-clip-text text-transparent bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94%">
+                SNS管理運用
+              </h3>
+              <div class="mt-[3.2rem] mb-[5.5rem] xsm:mt-[2.4rem]">
+                <span class="text-[1.4rem]">
+                  ソーシャルメディアの戦略設計から運用、分析まで一元的に管理し、ブランドのオンラインプレゼンスを強化します。ターゲットオーディエンスとのコミュニケーションを最適化し、ブランドイメージを一貫して維持します。これにより、オンラインでのブランド認知度が高まり、顧客エンゲージメントも向上します。
+                </span>
+              </div>
+            </div>
+            <div class="hidden xsm:block"></div>
+          </div>
+        </div>
+        <div class="px-[1.2rem] w-[100%] max-w-[74.7rem] xsm:px-[0] mb-[7rem] xsm:mb-[0] z-[9]">
+          <picture>
+            <source media="(max-width:685px)" srcset="statics/images/social-1.png">
+            <img src="statics/images/social-2.png" alt="Flowers" style="width:100%;">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="pocket mb-[10rem] relative pt-[154%] xxsm:pt-[58.14%]">
+        <div class="z-[1] absolute w-full top-0 left-0">
+          <picture>
+            <source media="(max-width:525px)" srcset="statics/images/icons/background-2.svg">
+            <img class="w-full" src="statics/images/icons/background-1.svg" alt="scale" style="width:100%;">
+          </picture>
+        </div>
+        <div
+          class="w-full h-[113px] absolute z-[2] top-[40%] left-[0] bg-[url('statics/images/icons/scales-3.svg')] xxsm:bg-[url('statics/images/icons/scales-4.svg')]"
+          alt="scale" style="width:100%;"></div>
+        <div class="z-[9] absolute w-full h-full top-0 left-0">
+          <div
+            class="gap-[8px] items-center flex mt-[6.7rem] ml-[1.6rem] xxsm:mt-[1rem] sm:mt-[2rem] md:mt-[4rem] lg:mt-[8rem] lg:ml-[9rem] xl:mt-[10rem]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="9" viewBox="0 0 8 9" fill="none">
+              <circle cx="4" cy="4.5" r="4" fill="#F4EF47" />
+            </svg>
+            <h3
+              class=" font-montserrat tracking-[3.6px] text-[1.8rem] bg-clip-text text-transparent bg-gradient-to-r from-[#EDFF2A] from-0.9% to-[#E2DA2A] to-99.94%">
+              Pocket Truster is
+            </h3>
+          </div>
+          <div
+            class="mt-[12rem] pr-[1.6rem] flex flex-col gap-[1rem] xxsm:mt-[1rem] sm:mt-[2rem] md:mt-[8rem]  md:pr-[8rem] lg:mt-[10rem] xl:mt-[12%]">
+            <p class="text-[1.6rem] md:text-[2.4rem] text-[#FFF] text-right">私たちのマーケティング支援は、</p>
+            <p class="text-[1.6rem] md:text-[2.4rem] text-[#FFF] text-right">この<span
+                class="font-montserrat text-[1.6rem] md:text-[2.4rem] bg-clip-text text-transparent bg-gradient-to-r from-[#EDFF2A] from-0.9% to-[#E2DA2A] to-99.94%">“SCALES”</span>をベースとして
+            </p>
+            <p class="text-[1.6rem] md:text-[2.4rem] text-[#FFF] text-right">クライアント様と顧客との <span
+                class="hidden xxsm:inline"> 関係性を戦略的に強化し、</span></p>
+            <p class="text-[1.6rem] md:text-[2.4rem] text-[#FFF] text-right xxsm:hidden">
+              関係性を戦略的に強化し、
+            </p>
+            <p class="text-[1.6rem] md:text-[2.4rem] text-[#FFF] text-right">専門的な分析を通じて、</p>
+            <p
+              class="text-[1.6rem] md:text-[2.4rem] text-[#FFF] text-right bg-clip-text text-transparent bg-gradient-to-r from-[#EDFF2A] from-0.9% to-[#E2DA2A] to-99.94%">
+              クライアント様のマーケティング活動を
+            </p>
+            <p class="text-[1.6rem] md:text-[2.4rem] text-[#FFF] text-right">
+              <span
+                class="bg-clip-text text-transparent bg-gradient-to-r from-[#EDFF2A] from-0.9% to-[#E2DA2A] to-99.94%">最適化することを重視</span>
+              しています。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section>
+      <div class="vision relative h-[1180px]">
+        <div class="z-[2] absolute top-[-5rem] right-[0] md:top-[-12rem]">
+          <picture>
+            <source media="(max-width:768px)" srcset="/statics/images/icons/vision-bg-ic.svg">
+            <img class="w-full" src="/statics/images/icons/vision-bg-ic-3.svg" alt="scale" style="width:100%;">
+          </picture>
+        </div>
+        <div class="z-[4] absolute top-[150px] right-[0]">
+          <picture>
+            <source media="(max-width:768px)" srcset="/statics/images/icons/yellow-ball-2.svg">
+            <img class="w-full" src="/statics/images/icons/yellow-ball.svg" alt="scale" style="width:100%;">
+          </picture>
+        </div>
+        <div
+          class="absolute z-[1] rounded-r-[60px] bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94% w-[92.8%] md:w-[calc(100%-288px)] min-h-[1180px]">
+        </div>
+        <div
+          class="z-[3]  absolute top-[0] left-[0] pl-[1.6rem] pt-[6rem]  w-[92.8%] md:w-[calc(100%-288px)] lg:pl-[8rem]">
+          <div class="gap-[8px] items-center flex ml-[1.6rem] xxsm:mt-[1rem] sm:mt-[2rem] md:mt-[4rem]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="9" viewBox="0 0 8 9" fill="none">
+              <circle cx="4" cy="4.5" r="4" fill="#F4EF47" />
+            </svg>
+            <h3
+              class=" font-montserrat tracking-[3.6px] text-[1.8rem] bg-clip-text text-transparent bg-gradient-to-r from-[#EDFF2A] from-0.9% to-[#E2DA2A] to-99.94%">
+              Vision
+            </h3>
+          </div>
+          <div class="flex flex-col gap-[1] mt-[6rem]">
+            <h3 class="text-[#FFF] text-[4rem] leading-[48px]">
+              架け橋としての
+            </h3>
+            <h3 class="text-[#FFF] text-[4rem] leading-[48px]">
+              存在意義を
+            </h3>
+            <h3 class="text-[#FFF] text-[4rem] leading-[48px]">
+              日々高める
+            </h3>
+          </div>
+          <div class=" w-[92.8%] md:w-[80.3%] lg:w-[43.4%] flex flex-col mt-[4rem]">
+            <p class="text-[1.6rem] text-[#FFF] leading-[180%]">
+              <span class="font-montserrat text-[1.6rem]">”SCALES”</span>をベースとした一歩先を行く
+            </p>
+            <p class="text-[1.6rem] text-[#FFF] leading-[180%]">
+              マーケティングソリューションで、
+            </p>
+            <p class="text-[1.6rem] text-[#FFF] leading-[180%]">
+              日本と世界、ビジネスと顧客を
+            </p>
+            <p class="text-[1.6rem] text-[#FFF] leading-[180%]">
+              効果的に繋ぐことに心血を注ぐ
+            </p>
+          </div>
+          <p class="w-[92.8%] md:w-[80.3%] lg:w-[43.4%]  mt-[6rem] text-[1.4rem] text-[#FFF] leading-[180%]">
+            ポケットトラスターは、国内外のマーケティングニーズに対応するための総合的なソリューションを提供する企業です。
+            高度なマーケティング戦略とデータ分析能力を持つ専門家チームが、お客様の課題解決に全力で取り組みます。
+            日本と世界、顧客とビジネスを効果的に繋ぐ「架け橋」として、
+            <span class="font-montserrat text-[1.4rem]">”SCALES”</span>
+            をベースとした一歩先を行く革新的なマーケティング手法で、
+            ビジネスの成長と成功をサポートします。私たちの目標は、マーケティングの力で人々の生活をより豊かにし、
+            企業の持続的な成長を促進することです。
+          </p>
+
+          <div class="flex mt-[8.5rem]  gap-[1.6rem] items-center ssm:justify-center mb-[24.6rem] lg:w-[43.4%]">
+            <div class="flex gap-[8px]">
+              <svg class="mt-[2px]" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"
+                fill="none">
+                <circle cx="4" cy="4.00073" r="4" fill="white" />
+              </svg>
+              <div class="flex flex-col">
+                <p class="text-[1.1rem] text-[#fff] font-montserrat tracking-[2.2px]">VIEW MORE</p>
+                <p class="text-[1.8rem] text-[#fff] tracking-[3.6px]">私たちについて</p>
+              </div>
+            </div>
+            <button class="view-more-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                <circle cx="40" cy="40.0007" r="39.5" stroke="url(#paint0_linear_119_1463)" />
+                <defs>
+                  <linearGradient id="paint0_linear_119_1463" x1="26.0241" y1="0.000733052" x2="47.2289" y2="80.0007"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="currentColor" />
+                    <stop offset="0.505208" stop-color="currentColor" stop-opacity="0" />
+                    <stop offset="0.973958" stop-color="currentColor" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none">
+                <path
+                  d="M4 12.0007H16.25L11 6.75073L11.66 6.00073L18.16 12.5007L11.66 19.0007L11 18.2507L16.25 13.0007H4V12.0007Z"
+                  fill="currentColor" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <img class="absolute bottom-[-300px] left-[0] z-[4]" src="/statics/images/icons/vision-bg-ic-2.svg" alt=""
+          srcset="">
+        <div
+          class="absolute bottom-[-250px] right-[0] z-[5] w-[34.8rem] md:w-[35rem] md:top-[24%] lg:w-[64rem] xl:right-[80px]">
+          <picture>
+            <source media="(max-width:768px)" srcset="statics/images/vision-bg.png">
+            <img class="w-full" src="statics/images/vision-bg-2.png" alt="scale" style="width:100%;">
+          </picture>
+        </div>
+        <img class="z-[4] absolute bottom-[180px] right-[0] hidden w-[130px] md:block"
+          src="/statics/images/icons/yellow-ball-3.svg" alt="scale">
+      </div>
+    </section>
+    <section>
+      <div class="service mt-[50rem]  px-[1.6rem] xl:px-[8rem] md:mt-[20rem]">
+        <div class="gap-[8px] items-center flex">
+          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="9" viewBox="0 0 8 9" fill="none">
+            <circle cx="4" cy="4.5" r="4" fill="#4190E5" />
+          </svg>
+          <h3
+            class="tracking-[4px] text-[2rem] bg-clip-text text-transparent bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94%">
+            サービス
+          </h3>
+        </div>
+        <h3
+          class="font-montserrat tracking-[4.8px] text-[4.8rem] bg-clip-text text-transparent bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94%">
+          SEVICE
+        </h3>
+        <div class="lg:flex">
+          <div
+            class="border-t-[1px] border-solid border-[#D9D9D9] pt-[7.6rem] flex flex-col items-center mt-[4rem] lg:mt-[4rem] lg:border-t-[0] lg:border-r-[1px] lg:px-[3.4rem]">
+            <div class="flex flex-col items-center">
+              <img src="statics/images/icons/service-3.svg" alt="" srcset="">
+              <h4
+                class="text-[2.4rem] bg-clip-text text-transparent bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94%">
+                マーケティング
+              </h4>
+            </div>
+            <p class="text-[#222] text-[1.4rem] leading-[180%] mt-[5.6rem]">
+              私たちのマーケティングサービスは、戦略から実行、評価まで一元的に管理します。
+              データ分析を駆使して、顧客エンゲージメントとビジネス成果を最大化。日本と海外の市場に対応し、
+              文化や言語の違いを考慮したマーケティング戦略を展開。最新のテクノロジーを活用し、効果的なオムニチャネル戦略を設計します。
+            </p>
+            <div
+              class="mt-[5.6rem] px-[1.6rem] py-[2.4rem] w-full border-solid border-[1px] border-[#D9D9D9] rounded-[20px]">
+              <ul class="flex flex-col gap-[8px]">
+                <li class="text-[1.4rem] text-[#222]"><span class="text-[#4190E5]"># </span>デジタルマーケティング戦略</li>
+                <li class="text-[1.4rem] text-[#222]"><span class="text-[#4190E5]"># </span>検索エンジン最適化（SEO）</li>
+                <li class="text-[1.4rem] text-[#222]"><span class="text-[#4190E5]"># </span>ソーシャルメディアマーケティング</li>
+                <li class="text-[1.4rem] text-[#222]"><span class="text-[#4190E5]"># </span>コンテンツマーケティング</li>
+                <li class="text-[1.4rem] text-[#222]"><span class="text-[#4190E5]"># </span>インフルエンサーマーケティング</li>
+                <li class="text-[1.4rem] text-[#222]"><span class="text-[#4190E5]"># </span>リスティング広告　# ディスプレイ広告</li>
+                <li class="text-[1.4rem] text-[#222]"><span class="text-[#4190E5]"># </span>データ分析とレポート</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="border-t-[1px] border-solid border-[#D9D9D9] pt-[7.6rem] flex flex-col items-center mt-[7.6rem] lg:mt-[4rem] lg:border-t-[0] lg:border-r-[1px] lg:px-[3.4rem]">
+            <div class="flex flex-col items-center">
+              <img src="statics/images/icons/service-1.svg" alt="" srcset="">
+              <h4
+                class="text-[2.4rem] bg-clip-text text-transparent bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94%">
+                フロントエンド
+              </h4>
+            </div>
+            <p class="text-[#222] text-[1.4rem] leading-[180%] mt-[5.6rem]">
+              私たちのフロントエンドサービスは、ユーザーエクスペリエンス（UX）を最優先に考えます。デザインと機能性を高度に統合し、
+              顧客が求める情報やサービスに瞬時にアクセスできるようにします。レスポンシブデザインを採用し、
+              多様なデバイスでのアクセスに対応。ユーザーの行動データを分析し、継続的な改善を行います。
+            </p>
+            <div
+              class="mt-[5.6rem] px-[1.6rem] py-[2.4rem] w-full border-solid border-[1px] border-[#D9D9D9] rounded-[20px]">
+              <ul class="flex flex-col gap-[8px]">
+                <li class="text-[1.4rem] text-[#222]"><span class="text-[#4190E5]"># </span>ウェブサイトデザイン</li>
+                <li class="text-[1.4rem] text-[#222]"><span class="text-[#4190E5]"># </span>ユーザーインターフェース（UI）設計</li>
+                <li class="text-[1.4rem] text-[#222]"><span class="text-[#4190E5]"># </span>ユーザーエクスペリエンス（UX）設計</li>
+                <li class="text-[1.4rem] text-[#222]"><span class="text-[#4190E5]"># </span>レスポンシブデザイン</li>
+                <li class="text-[1.4rem] text-[#222]"><span class="text-[#4190E5]"># </span>モバイルアプリ開発 <span
+                    class="text-[#4190E5]">　# </span> モバイルアプリ開発</li>
+                <li class="text-[1.4rem] text-[#222]"><span class="text-[#4190E5]"># </span> A/Bテスト　<span
+                    class="text-[#4190E5]">#</span> ウェブアクセシビリティ</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="border-t-[1px] border-solid border-[#D9D9D9] pt-[7.6rem] flex flex-col items-center mt-[7.6rem] lg:mt-[4rem] lg:border-t-[0]  lg:px-[3.4rem]">
+            <div class="flex flex-col items-center">
+              <img src="statics/images/icons/service-2.svg" alt="" srcset="">
+              <h4
+                class="text-[2.4rem] bg-clip-text text-transparent bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94%">
+                バックエンド
+              </h4>
+            </div>
+            <p class="text-[#222] text-[1.4rem] leading-[180%] mt-[5.6rem]">
+              私たちのバックエンドサービスでは、安全性とスケーラビリティを重視します。データベース管理からAPIの設計、サーバーの運用まで、一貫したサービスを提供。
+              ビジネスの成長に合わせてスケールする柔軟なシステムアーキテクチャを構築。高度なセキュリティ対策を施し、顧客データの安全性を確保します。
+            </p>
+            <div
+              class="mt-[5.6rem] px-[1.6rem] py-[2.4rem] w-full border-solid border-[1px] border-[#D9D9D9] rounded-[20px]">
+              <ul class="flex flex-col gap-[8px]">
+                <li class="text-[1.4rem] text-[#222]"><span class="text-[#4190E5]"># </span>サーバー設定と管理</li>
+                <li class="text-[1.4rem] text-[#222]"><span class="text-[#4190E5]"># </span># データベース設計と管理　<span
+                    class="text-[#4190E5]">#</span> API開発</li>
+                <li class="text-[1.4rem] text-[#222]"><span class="text-[#4190E5]"># </span>システムインテグレーション</li>
+                <li class="text-[1.4rem] text-[#222]"><span class="text-[#4190E5]"># </span>セキュリティ対策</li>
+                <li class="text-[1.4rem] text-[#222]"><span class="text-[#4190E5]"># </span>バックアップとデータリカバリ</li>
+                <li class="text-[1.4rem] text-[#222]"><span class="text-[#4190E5]"># </span>クラウドサービス管理</li>
+                <li class="text-[1.4rem] text-[#222]"><span class="text-[#4190E5]"># </span>システム監視とメンテナンス</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div
+        class="news mt-[10rem] px-[1.6rem] mb-[10.5rem] lg:flex lg:px-[4rem] lg:gap-[6rem] justify-center lg:px-[8rem] lg:gap-[13.5rem] ">
+        <div class="">
+          <div class="gap-[8px] items-center flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="9" viewBox="0 0 8 9" fill="none">
+              <circle cx="4" cy="4.5" r="4" fill="#4190E5" />
+            </svg>
+            <h3
+              class="tracking-[4px] text-[2rem] bg-clip-text text-transparent bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94%">
+              お知らせ
+            </h3>
+          </div>
+          <h3
+            class="font-montserrat tracking-[4.8px] text-[4.8rem] bg-clip-text text-transparent bg-gradient-to-r from-[#4190E5] from-10.95% to-[#3636BF] to-101.94%">
+            NEWS
+          </h3>
+        </div>
+        <div>
+          <div>
+            <div class="bg-[#222] h-[1px] w-[3rem] mt-[4rem] lg:mt-[0]">
+            </div>
+            <p class="text-[1.8rem] text-[#222] mt-[3.6rem]">
+              お知らせの見出しが入りますお知らせの見出しが入りますお知らせの見出しが入ります
+            </p>
+            <p class="text-[1.2rem] text-[#807D7D] mt-[0.8rem]">
+              お知らせの詳細が入りますお知らせの詳細が入りますお知らせの詳細が入りますお知らせの詳細が入りますお知ら...
+            </p>
+            <div class="flex gap-[2.4rem] mt-[2rem]">
+              <span class="text-[1.2rem] text-[#807D7D] ">2023.10.31</span>
+              <button class="w-[7.2rem] bg-[#F2F2F2] rounded-[10px] h-[2rem] font-montserrat hover:bg-[#f2f2f2d9]">
+                NEWS
+              </button>
+            </div>
+          </div>
+          <div>
+            <div class="bg-[#222] h-[1px] w-[3rem] mt-[4rem]">
+            </div>
+            <p class="text-[1.8rem] text-[#222] mt-[3.6rem]">
+              お知らせの見出しが入りますお知らせの見出しが入りますお知らせの見出しが入ります
+            </p>
+            <p class="text-[1.2rem] text-[#807D7D] mt-[0.8rem]">
+              お知らせの詳細が入りますお知らせの詳細が入りますお知らせの詳細が入りますお知らせの詳細が入りますお知ら...
+            </p>
+            <div class="flex gap-[2.4rem] mt-[2rem]">
+              <span class="text-[1.2rem] text-[#807D7D] ">2023.10.31</span>
+              <button class="w-[7.2rem] bg-[#F2F2F2] rounded-[10px] h-[2rem] font-montserrat hover:bg-[#f2f2f2d9]">
+                NEWS
+              </button>
+            </div>
+          </div>
+          <div>
+            <div class="bg-[#222] h-[1px] w-[3rem] mt-[4rem]">
+            </div>
+            <p class="text-[1.8rem] text-[#222] mt-[3.6rem]">
+              お知らせの見出しが入りますお知らせの見出しが入りますお知らせの見出しが入ります
+            </p>
+            <p class="text-[1.2rem] text-[#807D7D] mt-[0.8rem]">
+              お知らせの詳細が入りますお知らせの詳細が入りますお知らせの詳細が入りますお知らせの詳細が入りますお知ら...
+            </p>
+            <div class="flex gap-[2.4rem] mt-[2rem]">
+              <span class="text-[1.2rem] text-[#807D7D] ">2023.10.31</span>
+              <button class="w-[7.2rem] bg-[#F2F2F2] rounded-[10px] h-[2rem] font-montserrat hover:bg-[#f2f2f2d9]">
+                NEWS
+              </button>
+            </div>
+          </div>
+          <div class="flex justify-center mt-[6rem] gap-[3.8rem] items-center lg:justify-end">
+            <div class="flex gap-[8px]">
+              <svg class="mt-[2px]" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"
+                fill="none">
+                <circle cx="4" cy="4.00073" r="4" fill="#4190E5" />
+              </svg>
+              <div class="flex flex-col">
+                <p class="text-[1.1rem] text-[#222] font-montserrat tracking-[2.2px]">VIEW ALL</p>
+                <p class="text-[1.8rem] text-[#222] tracking-[3.6px]">お知らせ一覧</p>
+              </div>
+            </div>
+            <button class="view-more-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="81" height="80" viewBox="0 0 81 80" fill="none">
+                <circle cx="40.5" cy="40" r="39.5" stroke="url(#paint0_linear_119_1397)" />
+                <defs>
+                  <linearGradient id="paint0_linear_119_1397" x1="26.5241" y1="6.30136e-07" x2="47.7289" y2="80"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#4190E5" />
+                    <stop offset="0.505208" stop-color="white" stop-opacity="0" />
+                    <stop offset="0.973958" stop-color="#3636BF" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                fill="none">
+                <path d="M4.5 12H16.75L11.5 6.75L12.16 6L18.66 12.5L12.16 19L11.5 18.25L16.75 13H4.5V12Z"
+                  fill="#4190E5" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
     </section>
   </div>
 </body>
