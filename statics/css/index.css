@@ -2,6 +2,10 @@
   position: relative;
 }
 
+span {
+  color: var(----primary-color-black-1, #222);
+}
+
 .body .bg-img {
   position: absolute;
   right: 0;
@@ -66,14 +70,15 @@
   max-width: 32rem;
   align-self: self-end;
 }
+
 .view-more-button {
   position: relative;
 }
+
 .view-more-button .arrow {
   position: absolute;
-  top: 28px;
-  left: 30px;
 }
+
 .view-more-button svg {
   color: #fff;
   transition: all 0.5s;
@@ -83,22 +88,34 @@
   color: rgb(166, 255, 0);
 }
 
+.news-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
 
 @media (min-width: 475px) {
   .scales {
     padding: 14rem 2.8rem 11rem 2.8rem;
   }
+
   .scales h3 {
     text-align: center;
     font-size: 3rem;
   }
+
   .scales h3 span {
     font-size: 3.6rem;
   }
+
   .scales h4 {
     text-align: center;
     font-size: 1.4rem;
   }
+
   .scales h4 span {
     font-size: 1.4rem;
   }
@@ -114,17 +131,21 @@
   .scales {
     padding: 15rem 2.8rem 11rem 2.8rem;
   }
+
   .scales h3 {
     text-align: center;
     font-size: 3.2rem;
   }
+
   .scales h3 span {
     font-size: 3.8rem;
   }
+
   .scales h4 {
     text-align: center;
     font-size: 1.6rem;
   }
+
   .scales h4 span {
     font-size: 1.6rem;
   }
@@ -140,20 +161,51 @@
   .scales {
     padding: 28rem 2.8rem 11rem 2.8rem;
   }
+
   .scales h3 {
     text-align: center;
     font-size: 3.6rem;
   }
+
   .scales h3 span {
     font-size: 4.8rem;
   }
+
   .scales h4 {
     text-align: center;
     font-size: 1.8rem;
     margin-top: 3.3rem;
   }
+
   .scales h4 span {
     font-size: 1.8rem;
+  }
+
+  .scales .scales-logo {
+    margin-top: 8rem;
+    max-width: 94rem;
+    align-self: center;
+  }
+}
+
+@media (min-width: 1536px) {
+  .scales h3 {
+    text-align: center;
+    font-size: calc(3.6rem + 1vw);
+  }
+
+  .scales h3 span {
+    font-size: calc(4.8rem + 1vw);
+  }
+
+  .scales h4 {
+    text-align: center;
+    font-size: calc(1.8rem + 1vw);
+    margin-top: 3.3rem;
+  }
+
+  .scales h4 span {
+    font-size: calc(1.8rem + 1vw);
   }
 
   .scales .scales-logo {
