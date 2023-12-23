@@ -13,7 +13,6 @@ html {
   cursor: pointer;
   line-height: 28px;
   display: inline-block;
-  color: #666;
 }
 .contact [type="checkbox"]:checked + label:before,
 .contact [type="checkbox"]:not(:checked) + label:before {
@@ -21,8 +20,8 @@ html {
   position: absolute;
   left: 0;
   top: 0;
-  width: 25px;
-  height: 26px;
+  width: 20px;
+  height: 20px;
   border: none;
   border-radius: 100%;
   background-image: linear-gradient(to bottom right, #4190e5, #3636bf);
@@ -30,12 +29,12 @@ html {
 .contact [type="checkbox"]:checked + label:after,
 .contact [type="checkbox"]:not(:checked) + label:after {
   content: "";
-  width: 20px;
-  height: 20px;
-  border: 3px solid white;
+  width: 16px;
+  height: 16px;
+  border: 2px solid white;
   position: absolute;
-  top: 3px;
-  left: 3px;
+  top: 2px;
+  left: 2px;
   -webkit-transition: all 0.2s ease;
   border-radius: 100%;
   transition: all 0.2s ease;
@@ -45,6 +44,22 @@ html {
 }
 .contact [type="checkbox"]:checked + label:after {
   background-image: linear-gradient(to bottom right, #4190e5, #3636bf);
+}
+
+@media (min-width: 1280px) {
+  .contact [type="checkbox"]:checked + label:before,
+  .contact [type="checkbox"]:not(:checked) + label:before {
+    width: 25px;
+    height: 26px;
+  }
+  .contact [type="checkbox"]:checked + label:after,
+  .contact [type="checkbox"]:not(:checked) + label:after {
+    width: 20px;
+    height: 20px;
+    border: 3px solid white;
+    top: 3px;
+    left: 3px;
+  }
 }
 
 .gradient-contact {
