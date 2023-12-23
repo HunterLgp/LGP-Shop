@@ -13,7 +13,8 @@ tailwind.config = {
         bgTag: "#F3F4FC",
         bgTagAbout: "#F3F4FC88",
         border: "#EAECF0",
-        text1: '#222'
+        borderInput: "#A2A2A2",
+        text1: "#222",
       },
     },
     screens: {

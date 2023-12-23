@@ -1,3 +1,6 @@
+html {
+  font-size: 16px !important;
+}
 .truncate-three-line {
   line-height: 24px;
   font-size: 16px;
