@@ -11,10 +11,83 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./statics/css/global.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./statics/js/tailwindcss.config.js"></script>
   </head>
   <body>
+    <nav class="navbar">
+      <div class="app-logo w-full">
+        <a href="/index.html">
+          <img src="./statics/images/app-logo.svg" />
+        </a>
+      </div>
+      <div id="nav-icon">
+        <input type="checkbox" id="menu" />
+        <label for="menu" class="icon">
+          <div class="menu"></div>
+        </label>
+        <ul class="flex flex-col gap-[2rem]" id="menu">
+          <li>
+            <a href="/index.html">
+              <span class="text-[#fff] text-[2.4rem] font-montserrat"
+                >HOME</span
+              >
+            </a>
+          </li>
+          <li>
+            <a href="/about.html">
+              <span class="text-[#fff] text-[2.4rem] font-montserrat"
+                >ABOUT</span
+              >
+            </a>
+          </li>
+          <li>
+            <a href="/index.html">
+              <span class="text-[#fff] text-[2.4rem] font-montserrat"
+                >SERVICE</span
+              >
+            </a>
+          </li>
+          <li>
+            <a href="/index.html">
+              <span class="text-[#fff] text-[2.4rem] font-montserrat"
+                >NEWS</span
+              >
+            </a>
+          </li>
+          <li>
+            <a href="/index.html">
+              <span class="text-[#fff] text-[2.4rem] font-montserrat"
+                >CONTACT</span
+              >
+            </a>
+          </li>
+          <li class="mt-[4rem]">
+            <a href="/index.html">
+              <span class="text-[#fff] text-[1.6rem] font-montserrat">
+                PRIVACY POLICY</span
+              >
+            </a>
+          </li>
+          <li class="mt-[12.4rem]">
+            <div class="flex gap-[2.4rem] items-center justify-end px-[3rem]">
+              <span class="font-montserrat text-[1.4rem] text-[#fff]">
+                SHARE US
+              </span>
+              <a href="#"
+                ><img src="./statics/images/icons/twitter-ic.svg" alt="twitter"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./statics/images/icons/facebook-ic.svg"
+                  alt="facebook"
+              /></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <section
       class="w-full h-[134px] xl:h-[300px] bg-gradient-to-br from-gradientStart to-gradientEnd"
     >

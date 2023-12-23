@@ -19,12 +19,11 @@
   background: black;
 }
 
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
 }
 
 html {
@@ -35,9 +34,13 @@ html {
 .navbar {
   position: fixed;
   padding: 1.6rem 2.4rem 1.6rem 2.4rem;
-  background: linear-gradient(180deg, rgba(15, 18, 17, 0.60) 0%, rgba(0, 0, 0, 0.00) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(15, 18, 17, 0.6) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
   width: 100%;
-  z-index: 10;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
 }
@@ -52,7 +55,7 @@ html {
   width: 100%;
 }
 
-#nav-icon>label {
+#nav-icon > label {
   cursor: pointer;
   display: block;
   height: 5.4rem;
@@ -61,14 +64,14 @@ html {
   z-index: 100;
 }
 
-#nav-icon>label>div {
+#nav-icon > label > div {
   top: 50%;
   background: #ffff;
-  content: '';
+  content: "";
   display: block;
   height: 1px;
   position: absolute;
-  transition: transform ease .3s;
+  transition: transform ease 0.3s;
   width: 5rem;
   z-index: 100;
 }
@@ -76,11 +79,11 @@ html {
 .icon .menu::before,
 .icon .menu::after {
   background: #ffff;
-  content: '';
+  content: "";
   display: block;
   height: 1px;
   position: absolute;
-  transition: transform ease .3s;
+  transition: transform ease 0.3s;
   width: 5rem;
 }
 
@@ -92,23 +95,22 @@ html {
   top: 6px;
 }
 
-
-#menu:checked+.icon .menu {
+#menu:checked + .icon .menu {
   background: transparent;
 }
 
-#menu:checked+.icon .menu::before {
+#menu:checked + .icon .menu::before {
   transform: rotate(20deg);
 }
 
-#menu:checked+.icon .menu::after {
+#menu:checked + .icon .menu::after {
   transform: rotate(-20deg);
 }
 
-#menu:checked+.icon .menu::before,
-#menu:checked+.icon .menu::after {
+#menu:checked + .icon .menu::before,
+#menu:checked + .icon .menu::after {
   top: 0;
-  transition: top ease .3s, transform ease .3s .3s;
+  transition: top ease 0.3s, transform ease 0.3s 0.3s;
 }
 
 #menu:checked ~ ul {
@@ -129,9 +131,9 @@ input#menu {
   max-width: 375px;
   right: 0;
   top: 0;
-  background: linear-gradient(97deg, #4190E5 10.95%, #3636BF 101.94%);
+  background: linear-gradient(97deg, #4190e5 10.95%, #3636bf 101.94%);
   list-style: none;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   visibility: hidden;
   height: 0;
   opacity: 0;
@@ -172,7 +174,7 @@ input#menu {
 .header-container h2 {
   color: var(--primary-color-white-1, #fff);
   font-size: 1.4rem;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 300;
   line-height: 130%;
   text-transform: capitalize;
@@ -184,13 +186,13 @@ input#menu {
   bottom: -2px;
   left: 0;
   opacity: 0.9;
-  background: linear-gradient(97deg, #DFEEFF 10.95%, #5C5CFA 101.94%);
+  background: linear-gradient(97deg, #dfeeff 10.95%, #5c5cfa 101.94%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: capitalize;
   font-size: 3.8155rem;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 400;
   z-index: 2;
 }
@@ -206,11 +208,11 @@ input#menu {
   transform: translateY(50%);
   z-index: 1;
   border-radius: 0px 50px 50px 0px;
-  background: linear-gradient(97deg, #4190E5 10.95%, #3636BF 101.94%)
+  background: linear-gradient(97deg, #4190e5 10.95%, #3636bf 101.94%);
 }
 
 .text-gradient {
-  background: linear-gradient(97deg, #4190E5 10.95%, #3636BF 101.94%);
+  background: linear-gradient(97deg, #4190e5 10.95%, #3636bf 101.94%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
