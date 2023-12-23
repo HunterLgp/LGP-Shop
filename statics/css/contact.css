@@ -54,5 +54,5 @@ select {
   -moz-appearance: none; /* Firefox */
   -webkit-appearance: none; /* Safari and Chrome */
   appearance: none;
-  padding-left: 10px;
+  padding-left: 10px !important;
 }

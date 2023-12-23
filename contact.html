@@ -104,58 +104,70 @@
     </section>
     <section class="w-full pt-[57px] xl:pt-[128px] xl:mb-[170px] font-roboto">
       <div class="mx-auto max-w-[1440px] px-[25px] xl:px-[108px] w-full">
-        <div class="text-[24px] font-notoSansJP leading-[32px]">
+        <div
+          class="text-sm text-[24px] font-notoSansJP leading-[32px] font-bold xl:font-medium"
+        >
           Pocket
           Trustetに関心をお寄せいただきまして、誠にありがとうございます。お仕事や業務内容に関するお問い合わせ、求人へのご応募、その他のご相談は、こちらのフォームにて承ります。
         </div>
-        <div class="mt-[80px] w-full">
-          <div class="flex w-full flex-wrap h-[64px] items-center">
-            <label class="w-[200px] font-roboto text-[20px] font-semibold">
+        <div class="mt-[40px] xl:mt-[80px] w-full">
+          <div class="flex w-full flex-wrap xl:h-[64px] items-center">
+            <label
+              class="w-full xl:w-[200px] mb-[10px] xl:mb-0 font-roboto text-sm xl:text-[20px] font-semibold"
+            >
               氏名 <span class="text-red-500">*</span>
             </label>
-            <div class="flex-1 xl:pl-[30px] text-[20px]">
+            <div class="w-full xl:flex-1 xl:pl-[30px] text-[20px]">
               <input
                 type="text"
-                class="border border-solid border-borderInput h-[64px] w-full rounded-[12px] text-[20px] pl-3"
+                class="border border-solid border-borderInput h-[44px] xl:h-[64px] w-full rounded-[8px] xl:rounded-[12px] text-sm xl:text-[20px] pl-3"
               />
             </div>
           </div>
-          <div class="flex w-full flex-wrap h-[64px] items-center mt-[40px]">
-            <label class="w-[200px] font-roboto text-[20px] font-semibold">
+          <div class="flex w-full flex-wrap xl:h-[64px] items-center mt-[20px]">
+            <label
+              class="w-full xl:w-[200px] mb-[10px] xl:mb-0 font-roboto text-sm xl:text-[20px] font-semibold"
+            >
               会社名
             </label>
             <div class="flex-1 xl:pl-[30px]">
               <input
                 type="text"
-                class="border border-solid border-borderInput h-[64px] w-full rounded-[12px] text-[20px] pl-3"
+                class="border border-solid border-borderInput h-[44px] xl:h-[64px] w-full rounded-[8px] xl:rounded-[12px] text-sm xl:text-[20px] pl-3"
               />
             </div>
           </div>
-          <div class="flex w-full flex-wrap h-[64px] items-center mt-[40px]">
-            <label class="w-[200px] font-roboto text-[20px] font-semibold">
+          <div class="flex w-full flex-wrap xl:h-[64px] items-center mt-[20px]">
+            <label
+              class="w-full xl:w-[200px] mb-[10px] xl:mb-0 font-roboto text-sm xl:text-[20px] font-semibold"
+            >
               メールアドレス<span class="text-red-500">*</span>
             </label>
             <div class="flex-1 xl:pl-[30px]">
               <input
                 type="text"
-                class="border border-solid border-borderInput h-[64px] w-full rounded-[12px] text-[20px] pl-3"
+                class="border border-solid border-borderInput h-[44px] xl:h-[64px] w-full rounded-[8px] xl:rounded-[12px] text-sm xl:text-[20px] pl-3"
               />
             </div>
           </div>
-          <div class="flex w-full flex-wrap h-[64px] items-center mt-[40px]">
-            <label class="w-[200px] font-roboto text-[20px] font-semibold">
-              電話番号<span class="text-red-500">*</span>
+          <div class="flex w-full flex-wrap xl:h-[64px] items-center mt-[20px]">
+            <label
+              class="w-full xl:w-[200px] mb-[10px] xl:mb-0 font-roboto text-sm xl:text-[20px] font-semibold"
+            >
+              電話番号
             </label>
             <div class="flex-1 xl:pl-[30px]">
               <input
                 type="text"
-                class="border border-solid border-borderInput h-[64px] w-full rounded-[12px] text-[20px] pl-3"
+                class="border border-solid border-borderInput h-[44px] xl:h-[64px] w-full rounded-[8px] xl:rounded-[12px] text-sm xl:text-[20px] pl-3"
               />
             </div>
           </div>
 
-          <div class="flex w-full flex-wrap h-[64px] items-center mt-[40px]">
-            <label class="w-[200px] font-roboto text-[20px] font-semibold">
+          <div class="flex w-full flex-wrap xl:h-[64px] items-center mt-[20px]">
+            <label
+              class="w-full xl:w-[200px] mb-[10px] xl:mb-0 font-roboto text-sm xl:text-[20px] font-semibold"
+            >
               お問い合わせ種別<span class="text-red-500">*</span>
             </label>
             <div class="flex-1 xl:pl-[30px]">
@@ -165,7 +177,11 @@
                 <option
                   class="h-[60px] bg-gradient-to-br from-gradientStart to-gradientEnd"
                 >
-                  マーケティングについて相談したい
+                  <div
+                    class="h-[60px] bg-gradient-to-br from-gradientStart to-gradientEnd text-red-500"
+                  >
+                    マーケティングについて相談したい
+                  </div>
                 </option>
                 <option class="h-[60px]">
                   日本→海外展開について相談したい
@@ -190,17 +206,19 @@
               </select>
             </div>
           </div>
-          <div class="flex w-full flex-wrap h-[128px] items-center mt-[40px]">
-            <label class="w-[200px] font-roboto text-[20px] font-semibold">
+          <div class="flex w-full flex-wrap h-[128px] items-center mt-[20px]">
+            <label
+              class="w-full xl:w-[200px] mb-[10px] xl:mb-0 font-roboto text-sm xl:text-[20px] font-semibold"
+            >
               電話番号<span class="text-red-500">*</span>
             </label>
-            <div class="flex-1 xl:pl-[30px]">
+            <div class="w-full xl:flex-1 xl:pl-[30px]">
               <textarea
-                class="border border-solid border-borderInput h-[128px] w-full rounded-[12px] text-[20px] pl-3"
+                class="border border-solid border-borderInput h-[109px] xl:h-[128px] w-full rounded-[8px] rounded-[12px] text-sm xl:text-[20px] pl-3"
               ></textarea>
             </div>
           </div>
-          <div class="mt-[64px] ml-[230px] contact">
+          <div class="mt-[20px] xl:mt-[64px] xl:ml-[230px] contact">
             <input type="checkbox" id="check" />
             <label for="check">
               <p
@@ -211,9 +229,9 @@
               </p></label
             >
           </div>
-          <div class="mt-[53px] ml-[230px]">
+          <div class="mt-[30px] xl:mt-[53px] xl:ml-[230px]">
             <button
-              class="gradient-contact w-[200px] h-[50px] text-lg text-white rounded-[8px]"
+              class="gradient-contact w-[140px] xl:w-[200px] h-[40px] xl:h-[50px] text-base xl:text-lg text-white rounded-[8px] font-bold"
             >
               確認する
             </button>
