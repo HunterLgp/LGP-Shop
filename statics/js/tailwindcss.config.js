@@ -9,7 +9,9 @@ tailwind.config = {
         textBlack: "#1A1A1A",
         textGray: "#667085",
         textTime: "#999999",
+        borderAbout: "#CCCCCC",
         bgTag: "#F3F4FC",
+        bgTagAbout: "#F3F4FC88",
         border: "#EAECF0",
         text1: '#222'
       },
